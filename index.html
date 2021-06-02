@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all">
+</head>
+<body>
+
+    <article class="toDoList">
+        <header class="header_list">ToDoList</header>
+        <div class="content">
+            <div class="block_task">
+                <h2 class="tasks">Tasks
+                    <img class="cleanTask" src="refresh.svg" alt="">
+                </h2>
+                <ul class="list_task">
+                    <li class="list_item task_item">
+                        <label>
+                            <input type="checkbox">
+                            <span class="item_text">Встреча с заказчиком на 14:00</span>
+                        </label>
+                        <div class="control">
+                            <button class="btn_control btn_done" type="button">Done</button>
+                            <button class="btn_control btn_remove" type="button">Remove</button>
+                        </div>
+                    </li>
+                    <li class="list_item task_item">
+                        <label>
+                            <input type="checkbox">
+                            <span class="item_text">Посмотреть фильм</span>
+                        </label>
+                        <div class="control">
+                            <button class="btn_control btn_done" type="button">Done</button>
+                            <button class="btn_control btn_remove" type="button">Remove</button>
+                        </div>
+                    </li>
+                    <li class="list_item task_item">
+                        <label>
+                            <input type="checkbox">
+                            <span class="item_text">Прогулка вечером</span>
+                        </label>
+                        <div class="control">
+                            <button class="btn_control btn_done" type="button">Done</button>
+                            <button class="btn_control btn_remove" type="button">Remove</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="block_done">
+                <h2 class="done">Done
+                    <img class="cleanDone" src="refresh.svg" alt="">
+                </h2>
+                <ul class="list_done">
+                    
+                </ul>
+            </div>
+        </div>
+        <footer class="footer_list">
+            <form action="#" name="formTask">
+                <input type="text" name="textTask" placeholder="Новая задача">
+                <input type="submit" name="addTask" value="Добавить задачу">
+            </form>
+        </footer>
+    </article>
+
+    <template id="task_temp">
+        <li class="list_item task_item">
+            <label>
+                <input type="checkbox">
+                <span class="item_text"></span>
+            </label>
+            <div class="control">
+                <button class="btn_control btn_done" type="button">Done</button>
+                <button class="btn_control btn_remove" type="button">Remove</button>
+            </div>
+        </li>
+    </template>
+    <template id="done_temp">
+        <li class="list_item done_item"></li>
+    </template>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
