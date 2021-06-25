@@ -16,46 +16,64 @@
                 <h2 class="tasks">Tasks
                     <img class="cleanTask" src="refresh.svg" alt="">
                 </h2>
-                <ul class="list_task">
-                    <li class="list_item task_item">
-                        <label>
-                            <input type="checkbox">
-                            <span class="item_text">Встреча с заказчиком на 14:00</span>
-                        </label>
-                        <div class="control">
-                            <button class="btn_control btn_done" type="button">Done</button>
-                            <button class="btn_control btn_remove" type="button">Remove</button>
+                <div class="container">
+                    <div class="viewport">
+                        <div class="list_task_wrap content-box">
+                            <ul class="list_task content-list">
+                                <li class="list_item task_item">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="item_text">Встреча с заказчиком на 14:00</span>
+                                    </label>
+                                    <div class="control">
+                                        <button class="btn_control btn_done" type="button">Done</button>
+                                        <button class="btn_control btn_remove" type="button">Remove</button>
+                                    </div>
+                                </li>
+                                <li class="list_item task_item">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="item_text">Посмотреть фильм</span>
+                                    </label>
+                                    <div class="control">
+                                        <button class="btn_control btn_done" type="button">Done</button>
+                                        <button class="btn_control btn_remove" type="button">Remove</button>
+                                    </div>
+                                </li>
+                                <li class="list_item task_item">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="item_text">Прогулка вечером</span>
+                                    </label>
+                                    <div class="control">
+                                        <button class="btn_control btn_done" type="button">Done</button>
+                                        <button class="btn_control btn_remove" type="button">Remove</button>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-                    </li>
-                    <li class="list_item task_item">
-                        <label>
-                            <input type="checkbox">
-                            <span class="item_text">Посмотреть фильм</span>
-                        </label>
-                        <div class="control">
-                            <button class="btn_control btn_done" type="button">Done</button>
-                            <button class="btn_control btn_remove" type="button">Remove</button>
+                        <div class="scrollbar">
+                            <div class="scroller"></div>
                         </div>
-                    </li>
-                    <li class="list_item task_item">
-                        <label>
-                            <input type="checkbox">
-                            <span class="item_text">Прогулка вечером</span>
-                        </label>
-                        <div class="control">
-                            <button class="btn_control btn_done" type="button">Done</button>
-                            <button class="btn_control btn_remove" type="button">Remove</button>
-                        </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
             <div class="block_done">
                 <h2 class="done">Done
                     <img class="cleanDone" src="refresh.svg" alt="">
                 </h2>
-                <ul class="list_done">
-                    
-                </ul>
+                <div class="container">
+                    <div class="viewport">
+                        <div class="list_task_wrap content-box">
+                            <ul class="list_done content-list">
+                            
+                            </ul>
+                        </div>
+                        <div class="scrollbar">
+                            <div class="scroller"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <footer class="footer_list">
@@ -83,5 +101,6 @@
     </template>
     
     <script src="./script.js"></script>
+    <script src="./scroll.js"></script>
 </body>
 </html>

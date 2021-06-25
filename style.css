@@ -47,10 +47,35 @@ h2 img{
     background: linear-gradient(171deg, rgba(2,0,36,1) 0%, rgba(9,121,109,1) 35%, rgba(0,212,255,1) 100%);
 }
 
+.container{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    margin: 25px 0;
+}
+
+.viewport{
+    overflow: hidden;
+    position: absolute;
+    left: 19px;
+    right: 9px;
+    top: 7px;
+    bottom: 7px;
+}
+
+.list_task_wrap{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: -17px;
+    overflow-y: scroll;
+}
+
 .list_done,
 .list_task{
-    height: 200px;
-    overflow: auto;
+    padding-right: 25px;
+    margin: 0;
+    user-select: none;
 }
 
 .list_item{
@@ -58,8 +83,11 @@ h2 img{
     font-weight: 700;
     letter-spacing: .8px;
     font-size: 17px;
-    margin-bottom: 10px;
     list-style: none;
+}
+
+.list_item:not(:last-child){
+    margin-bottom: 10px;
 }
 
 .task_item{
@@ -153,4 +181,28 @@ input[type="submit"]{
     outline: none;
     margin-left: -1px;
     cursor: pointer;
+}
+
+/* ============================ */
+.scrollbar, .scroller {
+	width: 5px;
+	position: absolute;
+	top: 0;
+}
+.scrollbar {
+    opacity: 0;
+	right: 0;
+	bottom: 0;
+    border-radius: 5px;
+    background-color: rgba(2, 0, 36, .1);
+    transition: opacity .3s;
+}
+.scrollbar--active{
+    opacity: 1;
+}
+.scroller {
+	left: 0;
+	border-radius: 5px;
+	background: rgba(9, 121, 109, .8);
+	cursor: pointer;
 }
